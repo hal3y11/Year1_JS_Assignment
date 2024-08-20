@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brians Bevvies</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="final.js" defer></script>
+</head>
+
+<body>
+
+    <fieldset>
+
+        <!-- size-->
+        <legend>Size</legend>
+
+        <div>
+            <input type="radio" id="small" name="size" value="small">
+            <label class="radio" for="small">Small- £2.70</label>
+        </div>
+
+        <div>
+            <input type="radio" id="medium" name="size" value="medium" checked>
+            <label class="radio" for="medium">Medium- £3.20</label>
+        </div>
+
+        <div>
+            <input type="radio" id="large" name="size" value="large">
+            <label class="radio" for="large">Large- £3.70</label>
+        </div>
+        <div>
+            <input type="radio" id="xlarge" name="size" value="xlarge">
+            <label class="radio" for="xlarge">Extra Large- £4.50</label>
+        </div>
+
+    </fieldset>
+    <fieldset>
+        <!--Type-->
+        <legend>Type</legend>
+
+        <div>
+            <input type="radio" id="smoothie" name="type" value="smoothie" >
+            <label class="radio" for="smoothie">Smoothie</label>
+        </div>
+
+        <div>
+            <input type="radio" id="milk" name="type" value="milk">
+            <label class="radio" for="milk">Milkshake</label>
+        </div>
+
+
+    </fieldset>
+
+    <fieldset>
+        <!--Ingredients-->
+
+        <legend>Ingredients</legend>
+        <input type="checkbox" id="banana" name="ingredients" value="Banana ">
+        <label for="banana">Banana</label>
+
+        <input type="checkbox" id="raspberry" name="ingredients" value="Raspberry ">
+        <label for="raspberry">Raspberry</label>
+
+        <input type="checkbox" id="cranberry" name="ingredients" value="Cranberry ">
+        <label for="cranberry">Cranberry</label>
+
+        <input type="checkbox" id="strawberry" name="ingredients" value="Strawberry ">
+        <label for="strawberry">Strawberry</label>
+
+        <input type="checkbox" id="" name="ingredients" value="Chocolate ">
+        <label for="chocolate">Chocolate</label>
+        <p><i><b>You need to add at least 1 ingredient</b></i></p>
+
+    </fieldset>
+
+    <fieldset id="sbasesfieldset">
+
+        <!-- Smoothie bases -->
+        <legend>Bases</legend>
+
+        <div>
+            <input type="radio" id="apple" name="sbases" value="apple">
+            <label class="radio" for="apple">Apple Juice</label>
+        </div>
+
+
+        <div>
+            <input type="radio" id="orange" name="sbases" value="orange" checked>
+            <label class="radio" for="orange">Orange Juice</label>
+        </div>
+    </fieldset>
+    <fieldset id = "mbasesfieldset">
+        <!-- Milkshake bases -->
+
+        <legend>Bases</legend>
+
+        <div>
+            <input type="radio" id="whole" name="mbases" value="whole">
+            <label class="radio" for="whole">Whole milk</label>
+        </div>
+
+        <div>
+            <input type="radio" id="semi" name="mbases" value="semi">
+            <label class="radio" for="semi">Semi-skimmed Milk</label>
+
+        </div>
+
+        <div>
+            <input type="radio" id="skimmed" name="mbases" value="skimmed" checked>
+            <label class="radio" for="skimmed">Skimmed Milk</label>
+        </div>
+        <div>
+            <input type="radio" id="coconut" name="mbases" value="coconut">
+            <label class="radio" for="coconut">Coconut Milk</label>
+        </div>
+
+        <div>
+            <input type="radio" id="oat" name="mbases" value="oat">
+            <label class="radio" for="oat">Oat Milk</label>
+        </div>
+
+    </fieldset>
+    <fieldset id = "extrafieldset">
+        <!--milkx-->
+        <legend>Extra</legend>
+    <p>£0.85 each</p>
+
+        <div class="extra">
+            <input type="checkbox" id="malt" name="extra" value="Malt ">
+            <label for="malt">Malt</label>
+
+            <input type="checkbox" id="marshmallow" name="extra" value="Marshmallow ">
+            <label for="marshmallow">Marshmallows</label>
+
+            <input type="checkbox" id="cream" name="extra" value="Cream ">
+            <label for="cream">Whipped Cream</label>
+
+            <input type="checkbox" id="flake" name="extra" value="Flake ">
+            <label for="flake">A Flake</label>
+        </div>
+
+    </fieldset>
+    <br>
+    <!-- Drink cost -->
+    <div>
+        <p>
+            Price :<span id="price"></span>
+        </p>
+    </div>
+
+    <!-- button -->
+    <div>
+        <button name="order" id="order" class="button is-link">Add To Order</button>
+    </div>
+  
+
+    <!-- button -->
+    <div>
+        <button name="addf" id="addf" class="button is-link">Save My Favourite</button>
+    </div>
+
+
+    <!-- button -->
+    <div>
+        <button name="orderf" id="orderf" class="button is-link">Order My Favourite</button>
+    </div>
+    <br>
+
+    <!-- Order cost -->
+    <div>
+        <label for="ordertotal" class="label">Order Total:</label>
+        <span id="ordertotal"></span>
+    </div>
+    <br>
+
+    <!-- Order details -->
+    <fieldset>
+        <legend>Order details:</legend>
+        <span id="orderdetails"></span>
+    </div>
+    
+    <p id="output"></p>
+    
+</fieldset>
+<div>
+    <button name="reset" id="reset" class="button is-link">Order</button>
+</div>
+
+</body>
+
+</html>
